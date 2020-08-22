@@ -1,5 +1,4 @@
 function move(dir) {
-	moved = true
 	switch(dir) {
 		case left:
 			x -= tile_size;
@@ -14,9 +13,7 @@ function move(dir) {
 			y += tile_size;
 			break;
 		case no_move:
-			break;
 		default:
-			moved = false
 			break;
 	}
 }
