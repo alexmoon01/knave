@@ -41,7 +41,10 @@ if (frames_since_move >= frames_between_moves) {
 			break;
 	}
 	if(moved) {
-		frames_since_move = 0
-		trigger_turn
+		frames_since_move = 0;
+		// Triggers non-player objects to take their turn
+		with(obj_not_player) {
+			event_user(0);
+		}
 	}
 }

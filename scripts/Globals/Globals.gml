@@ -7,6 +7,3 @@
 
 // Allows the user to start and stop moving whenever they want, but still puts space between their moves
 #macro frames_between_moves 15
-
-// Triggers custom event to make AI move
-#macro trigger_turn event_perform(ev_user0, 0)
