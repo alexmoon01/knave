@@ -4,7 +4,10 @@
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_vegetation",
+    "path": "objects/obj_vegetation/obj_vegetation.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -18,16 +21,16 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_terrain","path":"objects/obj_terrain/obj_terrain.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_no_veg","path":"objects/obj_no_veg/obj_no_veg.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "terrain",
-    "path": "folders/Objects/terrain.yy",
+    "name": "vegetation",
+    "path": "folders/Objects/vegetation.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_terrain",
+  "name": "obj_no_veg",
   "tags": [],
   "resourceType": "GMObject",
 }

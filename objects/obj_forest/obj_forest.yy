@@ -8,8 +8,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_terrain",
-    "path": "objects/obj_terrain/obj_terrain.yy",
+    "name": "obj_vegetation",
+    "path": "objects/obj_vegetation/obj_vegetation.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -23,12 +23,14 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_forest","path":"objects/obj_forest/obj_forest.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "terrain",
-    "path": "folders/Objects/terrain.yy",
+    "name": "vegetation",
+    "path": "folders/Objects/vegetation.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_forest",

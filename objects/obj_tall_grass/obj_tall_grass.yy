@@ -1,10 +1,16 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_tall_grass",
+    "path": "sprites/spr_tall_grass/spr_tall_grass.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_vegetation",
+    "path": "objects/obj_vegetation/obj_vegetation.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -18,16 +24,16 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_terrain","path":"objects/obj_terrain/obj_terrain.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_tall_grass","path":"objects/obj_tall_grass/obj_tall_grass.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "terrain",
-    "path": "folders/Objects/terrain.yy",
+    "name": "vegetation",
+    "path": "folders/Objects/vegetation.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_terrain",
+  "name": "obj_tall_grass",
   "tags": [],
   "resourceType": "GMObject",
 }

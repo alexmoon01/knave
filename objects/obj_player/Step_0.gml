@@ -3,7 +3,7 @@
 frames_since_move++
 
 // Get most recent movement key
-for(i = 0; i < array_length_1d(global.movement_keys); i++) {
+for(i = 0; i < array_length(global.movement_keys); i++) {
 	if(keyboard_check_pressed(global.movement_keys[i])) {
 		ds_list_insert(movement_keys_down, 0, global.movement_keys[i])
 	}
