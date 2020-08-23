@@ -24,15 +24,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"d2a1ee5d-c768-4b6b-9c71-a5cedb772f96","path":"sprites/spr_trader/spr_trader.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d2a1ee5d-c768-4b6b-9c71-a5cedb772f96","path":"sprites/spr_trader/spr_trader.yy",},"LayerId":{"name":"06cfb0f3-c146-46c8-aff7-f6cc18da2cae","path":"sprites/spr_trader/spr_trader.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_trader","path":"sprites/spr_trader/spr_trader.yy",},"resourceVersion":"1.0","name":"d2a1ee5d-c768-4b6b-9c71-a5cedb772f96","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"3732aa7a-37be-47d6-8092-f30cceaa1ffc","path":"sprites/spr_forest/spr_forest.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"3732aa7a-37be-47d6-8092-f30cceaa1ffc","path":"sprites/spr_forest/spr_forest.yy",},"LayerId":{"name":"73d698c9-0af3-4b65-9d8d-845741abbbb0","path":"sprites/spr_forest/spr_forest.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_forest","path":"sprites/spr_forest/spr_forest.yy",},"resourceVersion":"1.0","name":"3732aa7a-37be-47d6-8092-f30cceaa1ffc","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_trader","path":"sprites/spr_trader/spr_trader.yy",},
+    "spriteId": {"name":"spr_forest","path":"sprites/spr_forest/spr_forest.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 60.0,
+    "playbackSpeed": 30.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"5cb01e2d-e3b3-43ab-a308-d4c27ae7bb47","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d2a1ee5d-c768-4b6b-9c71-a5cedb772f96","path":"sprites/spr_trader/spr_trader.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c87272c8-bf85-4d6d-8cbc-0b9a073b5418","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3732aa7a-37be-47d6-8092-f30cceaa1ffc","path":"sprites/spr_forest/spr_forest.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,21 +58,21 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_trader","path":"sprites/spr_trader/spr_trader.yy",},
+    "parent": {"name":"spr_forest","path":"sprites/spr_forest/spr_forest.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_trader",
+    "name": "spr_forest",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"06cfb0f3-c146-46c8-aff7-f6cc18da2cae","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"73d698c9-0af3-4b65-9d8d-845741abbbb0","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "autonomous",
-    "path": "folders/Sprites/autonomous.yy",
+    "name": "terrain",
+    "path": "folders/Sprites/terrain.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_trader",
+  "name": "spr_forest",
   "tags": [],
   "resourceType": "GMSprite",
 }

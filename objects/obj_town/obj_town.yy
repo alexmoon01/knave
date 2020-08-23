@@ -8,8 +8,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_not_player",
-    "path": "objects/obj_not_player/obj_not_player.yy",
+    "name": "obj_autonomous",
+    "path": "objects/obj_autonomous/obj_autonomous.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -30,8 +30,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "autonomous",
+    "path": "folders/Objects/autonomous.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_town",

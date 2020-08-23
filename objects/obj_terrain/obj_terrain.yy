@@ -21,11 +21,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "terrain",
+    "path": "folders/Objects/terrain.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_not_player",
+  "name": "obj_terrain",
   "tags": [],
   "resourceType": "GMObject",
 }

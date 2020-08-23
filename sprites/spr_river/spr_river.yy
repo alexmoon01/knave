@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"a4d6a06a-36b1-487d-927b-a044375ed2f8","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "terrain",
+    "path": "folders/Sprites/terrain.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_river",

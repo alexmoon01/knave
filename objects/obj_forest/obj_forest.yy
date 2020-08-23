@@ -1,15 +1,15 @@
 {
   "spriteId": {
-    "name": "spr_trader",
-    "path": "sprites/spr_trader/spr_trader.yy",
+    "name": "spr_forest",
+    "path": "sprites/spr_forest/spr_forest.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_autonomous",
-    "path": "objects/obj_autonomous/obj_autonomous.yy",
+    "name": "obj_terrain",
+    "path": "objects/obj_terrain/obj_terrain.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -27,11 +27,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "autonomous",
-    "path": "folders/Objects/autonomous.yy",
+    "name": "terrain",
+    "path": "folders/Objects/terrain.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_trader",
+  "name": "obj_forest",
   "tags": [],
   "resourceType": "GMObject",
 }

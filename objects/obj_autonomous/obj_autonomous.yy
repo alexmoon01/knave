@@ -1,16 +1,10 @@
 {
-  "spriteId": {
-    "name": "spr_trader",
-    "path": "sprites/spr_trader/spr_trader.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "obj_autonomous",
-    "path": "objects/obj_autonomous/obj_autonomous.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -31,7 +25,7 @@
     "path": "folders/Objects/autonomous.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_trader",
+  "name": "obj_autonomous",
   "tags": [],
   "resourceType": "GMObject",
 }
