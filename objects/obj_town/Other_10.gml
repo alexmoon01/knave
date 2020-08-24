@@ -8,14 +8,13 @@ for(i = 0; i < global.num_sizes; i++) {
 		probability = 0;
 	}
 	if(random(1) < probability) {
-		pos = random_nearby_position();
+		pos = random_orthogonal_position(x / tile_size, y / tile_size);
 		trader_size = i;
-
 	}
 }
 
 if(trader_size > 0) {
-	trader = instance_create_layer(pos[0], pos[1], "ActorLayer", obj_trader)
+	trader = instance_create_layer(pos[0] * tile_size, pos[1] * tile_size, "autonomous", obj_trader)
 	with (trader) {
 		size = other.trader_size;
 	}
