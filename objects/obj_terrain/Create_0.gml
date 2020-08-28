@@ -2,3 +2,4 @@
 // You can write your code in this editor
 
 difficulty = 1;
+elevation = 0;

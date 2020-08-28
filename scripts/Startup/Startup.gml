@@ -1,55 +1,43 @@
 function setup_outside() {
 	generate_room()
-	generate_mountains(8, 1, 5)
-	fill_remaining(obj_plains)
-}
-
-function generate_room() {
-	#macro hor_tiles 40
-	#macro ver_tiles 30
-	#macro outside_width_px hor_tiles * tile_size
-	#macro outside_height_px ver_tiles * tile_size
-	layer_create(50, "terrain")
-	layer_create(0, "vegetation")
-	layer_create(-100, "entities")
-	layer_create(-150, "player")
-}
-
-function form_chain_from(x_loc, y_loc, curr_layer, obj, len) {
-	blocked = false
-	for(j = 0; j < len && !blocked; j++) {
-		blocked = true
-		for(tries = 0; tries < 3 && blocked; tries++) {
-			next_pos = random_orthogonal_position(x_loc, y_loc)
-			tiles = get_tiles_at(next_pos[0], next_pos[1])
-			if(tiles[? "terrain"] == noone && in_bounds(next_pos[0], next_pos[1])) {
-				blocked = false
-				show_debug_message(next_pos[0])
-				show_debug_message(next_pos[1])
-				show_debug_message("")
-				instance_create_layer(next_pos[0] * tile_size, next_pos[1] * tile_size, "terrain", obj_mountains)
-				x_loc = next_pos[0]
-				y_loc = next_pos[1]
+	var points = bezier([[100, 100], [100, 900], [900, 100], [900, 900]], 20)
+	for(var i = 0; i < array_length(points) - 1; i++) {
+		with(obj_terrain) {
+			var start_x = points[i][0]
+			var start_y = points[i][1]
+			var end_x = points[i + 1][0]
+			var end_y = points[i + 1][1]
+			if(collision_line(start_x, start_y, end_x, end_y, id, false, false)) {
+				elevation = mountain_height
+				refresh_terrain_sprite()
 			}
 		}
 	}
 }
 
-//range_length is a 2-value array representing a range of lengths (inc on both ends)
-function generate_mountains(num_ranges, min_chain_len, max_chain_len) {
-	seed_locations = random_positions(hor_tiles, ver_tiles, num_ranges)
-	for(i = 0; i < num_ranges; i++) {
-		show_debug_message("==============================")
-		show_debug_message(seed_locations[i][0])
-		show_debug_message(seed_locations[i][1])
-		show_debug_message("")
-		x_loc = seed_locations[i][0] * tile_size
-		y_loc = seed_locations[i][1] * tile_size
-		instance_create_layer(x_loc, y_loc, "terrain", obj_mountains)
-		len = irandom(max_chain_len - min_chain_len) + min_chain_len
-		form_chain_from(seed_locations[i][0], seed_locations[i][1], "terrain", obj_mountains, len)
+function generate_room() {
+	layer_create(50, "terrain")
+	layer_create(0, "vegetation")
+	layer_create(-100, "entities")
+	layer_create(-150, "player")
+	for(var i = 0; i < hor_tiles; i++) {
+		for(var j = 0; j < ver_tiles; j++) {
+			var terrain = instance_create_layer(i * tile_size, j * tile_size, "terrain", obj_terrain)
+			with(terrain) {
+				refresh_terrain_sprite()
+			}
+		}
 	}
 }
 
-function fill_remaining(terrain_type, veg_type) {
+function refresh_terrain_sprite() {
+	if(elevation < plains_height) {
+		sprite_index = spr_river
+	} else if(elevation < hill_height) {
+		sprite_index = spr_plains
+	} else if(elevation < mountain_height) {
+		sprite_index = spr_hills
+	} else {
+		sprite_index = spr_mountains
+	}
 }
